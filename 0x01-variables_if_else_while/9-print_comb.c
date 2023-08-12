@@ -2,21 +2,22 @@
 
 /**
  * main - main
- *
- * description: This is the single digit numbers only
- *
- * Return: always 0
+ * 
+ * Return: Always 0 (Success)
  */
 
 int main(void)
 {
-	for (int i = 0; i < 10; i++){
+	int n;
 
-	printf("%d", i);
-	if (i != 9){
-		putchar(',');
-	putchar(' ');
-	}
+	for (n = 48; n < 58; n++)
+	{
+		putchar(n);
+		if (n != 57)
+		{
+			putchar(',');
+			putchar(' ');
+		}
 	}
 	putchar('\n');
 	return (0);
