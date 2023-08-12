@@ -3,27 +3,31 @@
 /**
  * main - main
  *
- * description: This is the single digit numbers only
+ * Description: This is the single-digit numbers only
  *
  * Return: always 0
  */
 
 int main(void)
 {
-	for (int i = 0; i < 100; i++)
+	int w, x;
+
+	for (w = 48; w <= 56; w++)
 	{
-		if (i / 10 < i % 10)
+		for (x = 49; x <= 57; x++)
 		{
-			putchar(i / 10 + '0');
-			putchar(i % 10 + '0');
-			if (i != 89)
+			if (x > w)
 			{
-				putchar(',');
-				putchar(' ');
+				putchar(w);
+				putchar(x);
+				if (w != 56 || x != 57)
+				{
+					putchar(',');
+					putchar(' ');
+				}
 			}
 		}
 	}
 	putchar('\n');
 	return (0);
 }
-
