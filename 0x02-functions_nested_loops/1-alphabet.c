@@ -1,13 +1,12 @@
 #include "main.h"
 
 /**
- * main - I hope it works
+ * print_alphabet - I hope it works
  *
  * description: printing the alphabet
  *
- * return: always 0
+ * return: void
  */
-
 void print_alphabet(void)
 {
 	char x;
