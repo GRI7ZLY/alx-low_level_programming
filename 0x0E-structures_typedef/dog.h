@@ -1,61 +1,30 @@
-<<<<<<< HEAD
-#ifndef DOG_H
-#define DOG_H
-
-#include <stdio.h>
-#include <stdlib.h>
+#ifndef _DOG_H_
+#define _DOG_H_
 
 /**
-*struct dog - a new type of data
-*representing a dog
-*@name: name of dog
-*@age: age of dog
-*@owner: owner's name
-*/
-struct dog
-{
-char *name;
-float age;
-char *owner;
-};
-
-
-/**
-*dog_t - Typedef for struct dog
-*/
+ * dog_t - Typedef for struct dog
+ */
 typedef struct dog dog_t;
 
-
-=======
-#ifndef STRUCTS
-#define STRUCTS
 /**
- * struct dog - description for a pet
- * @name: pet name
- * @age: pet age
- * @owner: owner
+ * struct dog - struct that stores some information of a dog
+ * @name: name of the dog
+ * @age: age of the dog
+ * @owner: owner of the dog
  *
- * Description: Longer description
+ * Description: struct called "dog" that stores its name, its age
+ * and the name of its owner.
  */
-typedef struct dog
+struct dog
 {
 	char *name;
 	float age;
 	char *owner;
-} dog_t;
-#endif
-#ifndef _FUNCTIONS_H
-#define _FUNCTIONS_H
-int _putchar(char c);
->>>>>>> 271fdb3fd8a95fe6acd6ae74edeccc050357ef47
+};
+
 void init_dog(struct dog *d, char *name, float age, char *owner);
 void print_dog(struct dog *d);
 dog_t *new_dog(char *name, float age, char *owner);
 void free_dog(dog_t *d);
-<<<<<<< HEAD
-int _strlen(char *str);
-char *_strcopy(char *dest, char *src);
 
-=======
->>>>>>> 271fdb3fd8a95fe6acd6ae74edeccc050357ef47
 #endif
