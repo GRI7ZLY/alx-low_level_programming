@@ -1,72 +1,71 @@
-#include "function_pointers.h"
 #include "3-calc.h"
-#include <stdio.h>
-#include <stdlib.h>
 
 /**
- * op_add - addition 
- * @a: parameter passed from main
- * @b: parameter passed from main
- * Return: result
+ * op_add - Funcions sum two numbers
+ *
+ * @a: THis is the number 1
+ * @b: This is the number 2
+ *
+ * Return: The result of the sum of two numbers
  */
 
 int op_add(int a, int b)
-
 {
-
-return (a + b);
-
+	return (a + b);
 }
 
 /**
- * op_mul - multiplication
- * @a: parameter passed from main
- * @b: parameter passed from main
- * Return: result
+ * op_sub - Funcions subtracion two numbers
+ *
+ * @a: THis is the number 1
+ * @b: This is the number 2
+ *
+ * Return: The result of the subtracion of two numbers
+ */
+
+int op_sub(int a, int b)
+{
+	return (a - b);
+}
+
+/**
+ * op_mul - Funcions multiplaction two numbers
+ *
+ * @a: THis is the number 1
+ * @b: This is the number 2
+ *
+ * Return: The result of the multiplation of two numbers
  */
 
 int op_mul(int a, int b)
-
 {
-
-return (a * b);
-
+	return (a * b);
 }
 
 /**
- * op_div - division
- * @a: parameter passed from main
- * @b: parameter passed from main
- * Return: result
+ * op_div - Funcions divition two numbers
+ *
+ * @a: THis is the number 1
+ * @b: This is the number 2
+ *
+ * Return: The result of the divition of two numbers
  */
 
 int op_div(int a, int b)
-
 {
-
-if (b != 0)
-
-return (a / b);
-
-printf("Error\n"), exit(100);
-
+	return (a / b);
 }
 
 /**
- * op_mod - modulus
- * @a: parameter passed from main
- * @b: parameter passed from main
- * Return: result
+ * op_mod - Funcions modulationo of two numbers
+ *
+ * @a: THis is the number 1
+ * @b: This is the number 2
+ *
+ * Return: The result of the modulation of two numbers
  */
 
 int op_mod(int a, int b)
-
 {
-
-if (b != 0)
-
-return (a % b);
-
-printf("Error\n"), exit(100);
-
+	return (a % b);
 }
